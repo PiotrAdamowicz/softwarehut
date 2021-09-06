@@ -1,0 +1,26 @@
+@mixin btn {
+  display: none;
+  font-family: "Roboto";
+  font-size: 12px;
+  padding: 48px 30px 16px 58px;
+  text-decoration: none;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.pages {
+  &__btn {
+    @include btn;
+    border: 1px solid black;
+    color: $text;
+    &-secondary {
+      @include btn;
+      background-color: $product;
+      color: $bgc;
+      padding: 48px 138px 16px 58px;
+      font-size: 16px;
+    }
+  }
+}
