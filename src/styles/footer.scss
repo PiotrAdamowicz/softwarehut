@@ -1,5 +1,31 @@
 .footer {
   width: 100%;
+  padding-top: 8rem;
   background-color: $product;
   color: $bgc;
+  &__list {
+    list-style: none;
+    padding: 2rem 2rem 6rem 2rem;
+  }
+  &__list-item {
+    font-size: 17px;
+    line-height: 27px;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    &:first-child {
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+  }
+  &__exlogo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    &-icon {
+      margin: 0.2rem;
+      display: block;
+    }
+  }
 }
