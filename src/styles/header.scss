@@ -1,0 +1,37 @@
+.header {
+  background-color: $bgc;
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    padding-left: $main-pad;
+    &__text-wrapper {
+      margin-top: 20rem;
+      width: 50%;
+    }
+    &__title {
+      @include h0-blue;
+    }
+    &__text {
+      @include description-text;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    &__img {
+      &-wrapper {
+        width: 50%;
+        background-image: url("../images/desks.png");
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+      }
+    }
+    &__badge {
+      display: block;
+      width: 200px;
+      height: 70px;
+      margin-right: 2rem;
+      &s-wrapper {
+        display: flex;
+      }
+    }
+  }
+}

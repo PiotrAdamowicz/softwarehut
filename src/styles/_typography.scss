@@ -1,5 +1,6 @@
 @import "./colors";
 
+$main-pad: 20%;
 //Templates
 @mixin h0($color) {
   font-size: 70px;
@@ -17,34 +18,34 @@
 }
 
 //Headers
-.h0-blue {
+@mixin h0-blue {
   @include h0($product);
 }
-.h0-black {
+@mixin h0-black {
   @include h0($text);
 }
-.description-text {
+@mixin description-text {
   font-size: 30px;
   line-height: 40px;
   color: $text;
   font-family: "Roboto";
   font-weight: 400;
 }
-.h2 {
+@mixin h2 {
   font-size: 30;
   line-height: 40px;
   color: $text;
   font-family: "Poppins", serif;
   font-weight: bold;
 }
-.h3 {
+@mixin h3 {
   font-size: 19px;
   line-height: 26px;
   color: $text;
   font-family: "Poppins", serif;
   font-weight: bold;
 }
-.h4 {
+@mixin h4 {
   font-size: 17px;
   color: $text;
   font-family: "Roboto", serif;
@@ -58,10 +59,10 @@ p {
 }
 
 //Lists
-.list {
+@mixin list {
   @include list($text);
 }
-.list-active {
+@mixin list-active {
   @include list($product);
 }
 

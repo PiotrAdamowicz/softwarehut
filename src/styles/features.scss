@@ -1,0 +1,11 @@
+.features {
+  &__carousel {
+    display: flex;
+  }
+  &__img {
+    &-wrapper {
+      width: 310px;
+      background-color: white;
+    }
+  }
+}

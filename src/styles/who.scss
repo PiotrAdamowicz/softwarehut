@@ -1,0 +1,15 @@
+.who {
+  margin-left: $main-pad;
+  &__carousel {
+    display: flex;
+    &-item {
+      width: 20%;
+      margin-right: 13rem;
+    }
+  }
+  &__item {
+    &-title {
+      @include h2;
+    }
+  }
+}
