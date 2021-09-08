@@ -1,0 +1,32 @@
+.specs {
+  margin-top: 9rem;
+  margin-left: $main-pad;
+  &__paragraph {
+    width: 30%;
+  }
+  &__title {
+    @include h2;
+    margin-top: 4rem;
+  }
+
+  &__features {
+    margin-top: 4rem;
+    margin-right: 23rem;
+    &-article {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-list {
+      list-style: none;
+      &-amount {
+        font-weight: bold;
+      }
+    }
+  }
+  &__list {
+    list-style: none;
+    &-item {
+      @include list($text);
+    }
+  }
+}

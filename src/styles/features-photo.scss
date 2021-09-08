@@ -1,0 +1,84 @@
+.features-photo {
+  margin-top: $section-spacing;
+  position: relative;
+  &__small-title {
+    @include small-title;
+    margin-left: $main-pad;
+  }
+  &__img {
+    padding-right: 34rem;
+    min-height: 25vw;
+    min-width: 434px;
+    &-wrapper {
+      width: 100%;
+      height: 20vw;
+      display: flex;
+      justify-content: flex-end;
+      background-image: url("../images/Layer 78.png");
+      background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    width: 100%;
+    margin: 0 18rem 10rem $main-pad;
+    font-size: 5rem;
+    line-height: 6rem;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: white;
+  }
+  &__text {
+    color: white;
+    width: 100%;
+    padding-top: 6rem;
+    line-height: 25px;
+    font-weight: 300;
+    &-wrapper {
+      padding-top: 6rem;
+      padding-right: 34rem;
+      background-color: $product;
+      display: flex;
+    }
+  }
+  &__download {
+    width: 100%;
+    background-color: $product;
+    display: flex;
+    justify-content: center;
+    &-btn {
+      min-width: 420px;
+      background-color: transparent;
+      border: none;
+      border-top: dotted rgba(255, 255, 255, 0.2) 2px;
+      color: $bgc;
+      padding: 2rem;
+    }
+  }
+  @mixin arrow {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    border: solid 2px $text;
+    border-top: 0;
+    margin: 3rem;
+    border-right: 0;
+    transform: rotate(45deg);
+  }
+  &__arrow {
+    @include arrow;
+    &--right {
+      @include arrow;
+      transform: rotate(225deg);
+    }
+    &-wrapper {
+      position: absolute;
+      bottom: 40%;
+      background-color: $bgc;
+      width: 7rem;
+      height: 7rem;
+      &--right {
+        right: 0;
+      }
+    }
+  }
+}

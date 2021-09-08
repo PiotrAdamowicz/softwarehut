@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 10vh;
   width: 100%;
   padding-top: 8rem;
   background-color: $product;
@@ -6,6 +7,9 @@
   &__list {
     list-style: none;
     padding: 2rem 2rem 6rem 2rem;
+    &s {
+      display: flex;
+    }
   }
   &__list-item {
     font-size: 17px;

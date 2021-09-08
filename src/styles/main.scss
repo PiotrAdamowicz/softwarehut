@@ -1,4 +1,6 @@
+@import "./variables";
 @import "./colors";
+@import "./mixins";
 @import "./typography";
 @import "./reset";
 //Sections
@@ -7,7 +9,8 @@
 @import "./header.scss";
 @import "./who.scss";
 @import "./features.scss";
-
+@import "./features-photo.scss";
+@import "./specs.scss";
 body {
   padding: 0 4rem 2rem;
 }

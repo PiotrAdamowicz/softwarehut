@@ -1,11 +1,26 @@
 .features {
+  &__text {
+    @include small-title;
+    margin-left: $main-pad;
+    margin-top: $section-spacing;
+  }
   &__carousel {
     display: flex;
+    margin-left: $main-pad;
+    margin-top: 2rem;
+    overflow: hidden;
   }
   &__img {
     &-wrapper {
       width: 310px;
       background-color: white;
+      margin-right: 2rem;
+      padding: 8rem 6rem 2rem;
+    }
+    &-title {
+      @include h3;
+      margin-top: 5rem;
+      margin-bottom: 4rem;
     }
   }
 }

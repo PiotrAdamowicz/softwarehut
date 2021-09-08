@@ -1,6 +1,5 @@
 @import "./colors";
 
-$main-pad: 20%;
 //Templates
 @mixin h0($color) {
   font-size: 70px;
@@ -8,13 +7,6 @@ $main-pad: 20%;
   color: $color;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-}
-@mixin list($color) {
-  font-family: "Poppins", serif;
-  font-weight: bold;
-  color: $color;
-  font-size: 19px;
-  line-height: 26px;
 }
 
 //Headers
@@ -59,11 +51,18 @@ p {
 }
 
 //Lists
-@mixin list {
-  @include list($text);
-}
-@mixin list-active {
-  @include list($product);
+@mixin list($color) {
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  color: $color;
+  font-size: 19px;
+  line-height: 26px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid $bgc;
+  &:nth-last-child {
+    border-bottom: 1px solid $bgc;
+  }
 }
 
 //font-family: 'Poppins', sans-serif;

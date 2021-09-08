@@ -4,6 +4,14 @@
   padding: 0 2rem;
   text-decoration: none;
 }
+@mixin arrow {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #2a2a2a;
+  transform: rotate(-45deg);
+  border-top: 0;
+  border-right: 0;
+}
 
 .nav {
   width: 100%;
@@ -33,6 +41,11 @@
   &__btn {
     @include btn;
     color: $text;
+    &-arrow {
+      @include arrow;
+      display: inline-block;
+      margin-left: 1rem;
+    }
     &-secondary {
       @include btn;
       background-color: $product;
@@ -99,12 +112,7 @@
     }
   }
   &__arrow {
-    width: 10px;
-    height: 10px;
-    border: 1px solid #2a2a2a;
-    transform: rotate(-45deg);
-    border-top: 0;
-    border-right: 0;
+    @include arrow;
     @media (min-width: 1024px) {
       display: none;
     }
